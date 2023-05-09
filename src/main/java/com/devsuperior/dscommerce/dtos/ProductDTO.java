@@ -1,7 +1,5 @@
 package com.devsuperior.dscommerce.dtos;
 
-import com.devsuperior.dscommerce.entities.Product;
-
 public class ProductDTO {
 
     private Long id;

@@ -34,4 +34,9 @@ public class ProductService {
         return products.map(x -> modelMapper.map(x, ProductDTO.class));
     }
 
+    public ProductDTO insert(ProductDTO dto) {
+        Product product = productRepository.save(modelMapper.map(dto, Product.class));
+        return modelMapper.map(product, ProductDTO.class);
+    }
+
 }
